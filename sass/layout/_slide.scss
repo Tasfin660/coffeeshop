@@ -1,0 +1,27 @@
+.slide {
+    &__icon {
+        width: 6.5rem;
+        height: 6.5rem;
+        fill: white;
+    }
+
+    &__text {
+        font-size: 2.2rem;
+        font-weight: 300;
+        color: white;
+        text-align: center;
+        letter-spacing: 1.2px;
+        line-height: 1.5;
+        width: 110rem;
+
+        /** 1100px / 16 = 68.75em */
+        @media only screen and (max-width: 68.75em) {
+            width: 90rem;
+        }
+
+        /** 800px / 16 = 50em */
+        @media only screen and (max-width: 50em) {
+            width: 75rem;
+        }
+    }
+}

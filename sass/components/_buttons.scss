@@ -1,0 +1,89 @@
+.card__btn {
+
+    &:link,
+    &:visited {
+        align-self: center;
+        font-size: 1.8rem;
+        text-decoration: none;
+        color: white;
+        letter-spacing: .7px;
+        padding: .6rem 1rem;
+        border-radius: 3px;
+        background-image: linear-gradient(to right, $primary-light, $primary);
+        margin-left: auto;
+    }
+}
+
+.btn-ghost {
+
+    &,
+    &:link,
+    &:visited {
+        font-size: 1.8rem;
+        color: $primary;
+        text-decoration: none;
+        outline: none;
+        border: 2px solid $primary;
+        border-radius: 3px;
+        background-color: white;
+        transition: all .3s;
+    }
+
+    &--about {
+        padding: .6rem 1.6rem;
+        margin-top: 10rem;
+    }
+
+    &--branch {
+        padding: .6rem 1.6rem;
+        margin-left: auto;
+    }
+
+    &--form {
+        padding: 1.3rem 1rem;
+        letter-spacing: .8px;
+        cursor: pointer;
+        margin-left: 1rem;
+    }
+
+    &:hover,
+    &:active {
+        color: white;
+        background-color: $primary;
+    }
+}
+
+.nav-btn {
+
+    &:link,
+    &:visited {
+        font-size: 1.9rem;
+        text-decoration: none;
+        border: 2px solid white;
+        border-radius: 1px;
+        padding: .7rem 1.6rem;
+    }
+
+    &--full {
+        color: $primary;
+        background-color: white;
+        transition: all .2s;
+
+        &:hover,
+        &:active {
+            background-color: #eee;
+        }
+    }
+
+    &--ghost {
+        color: white;
+        margin: 0 2rem;
+    }
+
+    &--header {
+        top: 37%;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: .8rem 1.8rem !important;
+    }
+}

@@ -1,0 +1,17 @@
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &__input {
+        width: 35rem;
+        font-family: inherit;
+        font-size: 1.7rem;
+        color: $primary;
+        padding: 1.2rem 1rem;
+        outline: none;
+        border: 2px solid $primary;
+        border-radius: 3px;
+        background-color: white;
+    }
+}

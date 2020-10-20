@@ -1,0 +1,57 @@
+.branch {
+    border-radius: 3px;
+    box-shadow: $shadow;
+    position: relative;
+
+    &__img {
+        display: block;
+        width: 100%;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        text-align: justify;
+    }
+
+    &__icon-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 12rem;
+
+        span {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: $primary-light;
+        cursor: pointer;
+        transition: all .2s;
+
+        &:hover {
+            fill: #201610;
+        }
+    }
+}
+
+.branch__header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.branch__middle {
+    padding: 1.5rem;
+}
+
+.branch__footer {
+    display: flex;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+    background-color: #eee;
+}

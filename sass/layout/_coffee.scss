@@ -1,0 +1,108 @@
+.coffee-container {
+    display: flex;
+    align-items: flex-start;
+    padding: 2rem 0;
+
+    /** 1300px / 16 = 81.25em */
+    @media only screen and (max-width: 81.25em) {
+        padding: 2rem;
+    }
+}
+
+.coffee {
+
+    &__figure {
+        width: 110rem;
+
+        /** 1100px / 16 = 68.75em */
+        @media only screen and (max-width: 68.75em) {
+            width: 40rem;
+        }
+    }
+
+    &__location-box {
+        flex-direction: column;
+        color: white;
+        top: 40%;
+        left: 55%;
+    }
+
+    &__location-icon {
+        width: 4rem;
+        height: 4rem;
+        fill: white;
+        border: 2px solid white;
+        border-radius: 50%;
+        padding: .3rem;
+    }
+
+    &__location-text {
+        font-size: 2.5rem;
+        font-weight: 300;
+        text-align: center;
+        width: 30rem;
+        margin-top: 1rem;
+    }
+
+    &__detail {
+        margin-left: 3rem;
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        fill: $primary-light;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        color: $primary-light;
+        text-align: justify;
+        line-height: 1.4;
+        margin: 4rem 0 2rem 0;
+        position: relative;
+
+        /** 1100px / 16 = 68.75em */
+        @media only screen and (max-width: 68.75em) {
+            width: 50rem;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: -2rem;
+            left: 13rem;
+            width: calc(15*12px);
+            height: 8px;
+            background-image: url(../../img/fancytitle.png);
+        }
+
+        &::after {
+            content: 'coffe\00B7 shop';
+            color: $primary-light;
+            position: absolute;
+            top: -2.5rem;
+            left: 1.5rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .4rem;
+        }
+    }
+}
+
+.contact-box {
+    display: flex;
+    align-items: center;
+    margin-top: 1.2rem;
+
+    span {
+        font-size: 1.8rem;
+        margin-left: 1rem;
+    }
+}

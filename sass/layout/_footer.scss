@@ -1,0 +1,94 @@
+.footer {
+    color: white;
+    padding: 6rem 0;
+    background-color: #160e0b;
+
+    /////////////////////////////
+    ///FOOTER COL--ONE DESIGN////
+
+    &__long {
+        font-size: 1.4rem;
+        line-height: 1.45;
+        width: 30rem;
+        margin: 2rem 0 3rem 0;
+    }
+
+    /////////////////////////////
+    ///FOOTER COL--TOW DESIGN////
+
+    &__list {
+        display: flex;
+        justify-content: flex-end;
+        transform: translateY(2rem);
+        list-style: none;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 2.5rem;
+    }
+
+    &__link {
+
+        &:link,
+        &:visited {
+            font-size: 1.9rem;
+            color: white;
+            text-decoration: none;
+            transition: all .2s;
+        }
+
+        span {
+            font-size: 1.5rem;
+            margin-right: .6rem;
+        }
+
+        &:hover,
+        &:active {
+            text-shadow: 0 0 .8rem rgba(white, .5);
+        }
+    }
+
+    /////////////////////////
+    ///FOOTER SUB DESIGN////
+
+    &__copy {
+        font-size: 1.5rem;
+        color: white;
+        letter-spacing: .8px;
+        opacity: .8;
+    }
+
+    &__media-list {
+        display: flex;
+        list-style-type: none;
+    }
+
+    &__media-item:not(:last-child) {
+        margin-right: 2.5rem;
+    }
+
+    &__media-icon {
+        width: 2rem;
+        height: 2rem;
+        fill: white;
+        transition: all .2s;
+    }
+}
+
+.footer-container {
+    max-width: 116rem;
+    margin: 0 auto;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 40rem 1fr;
+    grid-gap: 10rem;
+    margin-bottom: 4rem;
+}
+
+.footer-sub {
+    justify-content: space-between;
+    padding-top: 2rem;
+    border-top: 2px solid white;
+}

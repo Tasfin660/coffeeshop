@@ -1,0 +1,82 @@
+.section-about {
+    padding: 10rem 0;
+    grid-template-columns: 45rem max-content;
+    grid-gap: 15rem;
+    background-color: $background-light;
+
+    /** 1100px / 16 = 68.75em */
+    @media only screen and (max-width: 68.75em) {
+        grid-template-columns: 40rem max-content;
+        grid-gap: 8rem;
+    }
+
+    /** 800px / 16 = 50em */
+    @media only screen and (max-width: 50em) {
+        grid-template-columns: max-content;
+        grid-gap: 8rem;
+    }
+}
+
+.section-products {
+    margin: 0 auto;
+    max-width: 120rem;
+    padding: 10rem 0 18rem 0;
+    grid-template-columns: repeat(auto-fit, 55rem);
+    grid-column-gap: 8rem;
+    grid-row-gap: 6rem;
+    position: relative;
+
+    /** 1300px / 16 = 81.25em */
+    @media only screen and (max-width: 81.25em) {
+        grid-gap: 6rem;
+    }
+}
+
+.section-branch {
+    padding: 15rem 0 10rem 0;
+    grid-template-columns: repeat(2, 55rem);
+    grid-gap: 8rem;
+    background-color: $background-light;
+
+    /** 1300px / 16 = 81.25em */
+    @media only screen and (max-width: 81.25em) {
+        grid-gap: 6rem;
+    }
+
+    /** 1100px / 16 = 68.75em */
+    @media only screen and (max-width: 68.75em) {
+        grid-template-columns: 55rem;
+    }
+}
+
+.section-slide {
+    flex-direction: column;
+    padding: 10rem;
+    background-image: linear-gradient(rgba(#090604, .85), rgba(#090604, .85)), url(../../img/slide.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+.section-reviews {
+    padding: 8rem 0;
+    grid-template-columns: repeat(3, 40rem);
+    grid-gap: 8rem;
+    background-color: $background-light;
+    position: relative;
+
+    /** 1500px / 16 = 93.75em */
+    @media only screen and (max-width: 93.75em) {
+        grid-template-columns: repeat(2, 40rem);
+    }
+
+    /** 1000px / 16 = 62.5em */
+    @media only screen and (max-width: 62.5em) {
+        grid-gap: 6rem;
+    }
+}
+
+.section-coffee {
+    width: 114rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+}

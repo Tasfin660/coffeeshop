@@ -1,0 +1,80 @@
+.about {
+
+    &__figure {
+
+        /** 800px / 16 = 50em */
+        @media only screen and (max-width: 50em) {
+            width: 40rem;
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        border: 3px solid $primary;
+        padding: 1rem;
+        border-radius: 4px;
+        box-shadow: $shadow;
+    }
+
+    &__composition {
+        margin-top: 1rem;
+    }
+
+    &__sub-heading {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        letter-spacing: .4rem;
+    }
+
+
+    &__heading-container {
+        display: flex;
+        align-items: center;
+        margin-left: -2rem;
+    }
+
+    &__title-icon {
+        font-size: 1.6rem;
+        color: white;
+        letter-spacing: 1px;
+        text-align: center;
+        line-height: 1.6;
+        text-transform: uppercase;
+        width: max-content;
+        padding: .4rem 1rem 1.6rem 1rem;
+        border-radius: 3px;
+        margin-bottom: -1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+        background-image: linear-gradient(to bottom, $primary-light, $primary);
+
+        span {
+            display: block;
+        }
+
+        span:first-child {
+            padding-bottom: .1rem;
+            border-bottom: 2px solid white;
+        }
+    }
+
+    &__service {
+        display: flex;
+        margin-bottom: .8rem;
+
+        &:last-of-type {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__icon {
+        width: 1.8rem;
+        height: 1.8rem;
+        fill: $primary-light;
+    }
+
+    &__service-text {
+        font-size: 1.6rem;
+        margin-left: 1rem;
+    }
+}
